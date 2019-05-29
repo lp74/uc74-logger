@@ -1,0 +1,42 @@
+{
+  "name": "uc74-logger",
+  "version": "1.0.0",
+  "description": "",
+  "files": [
+    "build"
+  ],
+  "engines": {
+    "node": "^8 || ^10 || ^11"
+  },
+  "browser": "build/index.js",
+  "main": "build/index.cjs.js",
+  "module": "build/index.esm.js",
+  "global": false,
+  "scripts": {
+    "build": "BABEL_ENV=production rollup -c"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-async-to-generator": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/runtime": "^7.3.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-minify": "^0.5.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-babel-minify": "^8.0.0",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-filesize": "^6.0.1",
+    "rollup-plugin-local-resolve": "^1.0.7",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-terser": "^4.0.4"
+  }
+}
